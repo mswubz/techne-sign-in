@@ -4,8 +4,10 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
+import Typography from '@mui/material/Typography';
 import { CardContent, CardMedia } from '@mui/material';
 import TechneLogo from '../assets/Techne_Logo.png';
+
 
 var Airtable = require('airtable')
 Airtable.configure({
@@ -60,9 +62,12 @@ class Signup extends React.Component {
             <div style={{
                 display:'flex', 
                 alignItems: 'center', 
-                justifyContent: 'center'
+                justifyContent: 'center',
+                paddingTop: 100
             }}>
-                <Card sx={{maxWidth: 500}}>
+                <Card 
+                    sx={{maxWidth: 700}}
+                >
                     <CardMedia 
                         component='img'
                         width='150'
@@ -75,33 +80,44 @@ class Signup extends React.Component {
                         direction='column'
                         justifyContent='center'
                         alignItems='center'
+                        spacing={2}
                         >
                             <Grid item>
+                                <Typography variant='h2'>
+                                    Sign In
+                                </Typography>
+                            </Grid>
+                            <Grid item>
                                 <TextField 
-                                    label='first name' 
+                                    label='First Name' 
                                     id='firstName'
                                     onChange={handleChangeFirstName}
-                                />
-                                <TextField 
-                                    label='last name'  
-                                    id='lastName'
-                                    onChange={handleChangeLastName}
+                                    variant='standard'
                                 />
                             </Grid>
                             <Grid item>
                                 <TextField 
-                                    label='email' 
+                                    label='Last Name'  
+                                    id='lastName'
+                                    onChange={handleChangeLastName}
+                                    variant='standard'
+                                />
+                            </Grid>
+                            <Grid item>
+                                <TextField 
+                                    label='Email' 
                                     id='email'
                                     onChange={handleChangeEmail}
+                                    variant='standard'
                                 />
                             </Grid>
                             <Grid item>
                                 <Button 
-                                    variant='outlined'
+                                    variant='contained'
                                     onClick={handleClick}
                                     size='large'
                                 >
-                                    submit
+                                    Submit
                                 </Button>
                             </Grid>
                         </Grid>

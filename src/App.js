@@ -1,12 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import Signup from './components/Signup';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './assets/theme';
 
 function App() {
   return (
-    <div className="App">
-      <Signup />
-    </div>
+    <ThemeProvider theme={theme} >
+      <div className="App">
+        <Signup />
+      </div>
+    </ThemeProvider>
   );
 }
 
