@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/techne-sign-in/static/css/main.073c9b0a.css",
+    "main.js": "/techne-sign-in/static/js/main.8c5b3be2.js",
+    "static/js/787.edc7284c.chunk.js": "/techne-sign-in/static/js/787.edc7284c.chunk.js",
+    "static/media/Techne_Logo.png": "/techne-sign-in/static/media/Techne_Logo.bda270ebecd54a328875.png",
+    "index.html": "/techne-sign-in/index.html",
+    "main.073c9b0a.css.map": "/techne-sign-in/static/css/main.073c9b0a.css.map",
+    "main.8c5b3be2.js.map": "/techne-sign-in/static/js/main.8c5b3be2.js.map",
+    "787.edc7284c.chunk.js.map": "/techne-sign-in/static/js/787.edc7284c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.8c5b3be2.js"
+  ]
+}
